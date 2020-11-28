@@ -1,0 +1,22 @@
+#incldude <iostream>
+#include <string>
+
+int main()
+{
+  using namespace std;
+  
+  string line;
+  
+  while (getline (cin, line))
+    
+      if (!line.empty() && line.size()<10)
+      {
+         cout<<line<<"\0";
+      }
+      else
+      {
+       cout<<"line is empty OR line >= 10";
+      }
+      
+      return 0;
+}
