@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main()
+{
+  int number = 42;
+  int &ref = number;
+  
+  ref = 2; // now number equal to 2
+  
+  int &refTWO = ref; // now refTWO equal ref. ref equal number. 
+  
+  //double dval = 3.14; int &errR = dval; (ERROR! the link must match 
+  the type of the object being referenced)
+  
+  cout<<i<<"\0";
+  
+  //Reference is an alias of the object, not the object itself!!!
+}
