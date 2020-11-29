@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main()
+{
+   int number = 10;
+   int *pntr = &number;
+   
+   *pntr = 3; // number equal 3
+   
+   // double *errPNTR = &numer (ERROR! Type mismatch)
+   
+   void *pntr2 = &number; // ok: void is unknown type.
+   
+   if (*pntr) // pntr > 0, TRUE.
+     {
+        number = number + 2;
+     }
+   cout<<*pntr<<"\0"; // pntr is 12;
+}
