@@ -1,0 +1,13 @@
+#include <iostream>
+#include <vector>
+
+int main()
+{
+  vector<int> ivector;
+  
+  for (decltype(ivector.size()) i = 0; i != 10; ++i)
+    {
+      ivector.push_back(i);
+    }
+    return 0;
+}
