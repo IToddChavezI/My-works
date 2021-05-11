@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int acnt = 0, ocnt = 0, ecnt = 0;
+  char ch;
+  while (cin>>ch)
+  {
+    switch (ch)
+    {
+     case 'a':
+     ++acnt;
+     break;
+     case 'o':
+     ++ocnt;
+     break;
+     case 'e':
+     ++ecnt;
+     break;
+     
+     default:
+     ;
+    }
+  }
+  cout<<"a words = "<<acnt<<endl;
+  cout<<"o words = "<<ocnt<<endl;
+  cout<<"e words = "<ecnt<<endl;
+  
+  rerturn 0;
+}
