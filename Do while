@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string yes_or_no;
+    string word1;
+    string word2;
+    
+    do{
+        cout<<"Please, print word1: ";
+        cin>> word1;
+        
+        cout<<"Please, print word2: ";
+        cin>> word2;
+        cout<<"\n";
+        
+        if (word1.size() > word2.size())
+            cout<<"word1 > word2"<<"\n";
+        else if (word1.size() < word2.size())
+            cout<<"word1 < word2"<<"\n";
+        else
+            cout<<"word1 = word2"<<"\n";
+        
+        cout<<"Do you want to continue? Yes or no: ";
+        cin>>yes_or_no;
+        cout<<"\n";
+        
+    }while(!yes_or_no.empty() && yes_or_no[0] != 'n');
+}
