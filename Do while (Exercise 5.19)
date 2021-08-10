@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    string str1, str2;
+    string yes_or_no;
+    
+    do{
+        cout<<"Напишите первую строку: ";
+        cin>>str1;
+        cout<<"\n";
+        cout<<"Напишите вторую строку: ";
+        cin>>str2;
+        cout<<"\n";
+        
+        if (str1.size() == str2.size())
+            cout<<"Две строки равны по кол-ву символов"<<"\n";
+        else if (str1.size() > str2.size())
+            cout<<"Первая строка больше второй строки по кол-ву символов"<<"\n";
+        else if (str1.size() < str2.size())
+            cout<<"Вторая строка больше первой строки по кол-ву символов"<<"\n";
+        
+        cout<<"Вы хотите продолжить? Если да, напишите 'yes'. В случае обратном напишите 'no': ";
+        cin>>yes_or_no;
+        cout<<"\n";
+    }while(!yes_or_no.empty() && (yes_or_no[0] == 'y' || yes_or_no[0] == 'Y'));
+}
